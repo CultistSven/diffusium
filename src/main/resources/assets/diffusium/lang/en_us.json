@@ -1,0 +1,8 @@
+{
+  "item.diffusium.tomato": "Tomato",
+
+  "block.diffusium.tomato_block": "Tomato Block",
+  "block.diffusium.lumintite_crystal": "Lumintite Crystal Block",
+
+  "itemgroup.diffusium.diffusium_items" : "Diffusium Items"
+}

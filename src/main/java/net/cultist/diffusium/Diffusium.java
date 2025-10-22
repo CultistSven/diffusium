@@ -1,5 +1,8 @@
 package net.cultist.diffusium;
 
+import net.cultist.diffusium.block.ModBlocks;
+import net.cultist.diffusium.item.ModItemGroups;
+import net.cultist.diffusium.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +14,9 @@ public class Diffusium implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModItemGroups.registerItemGroups();
 
+        ModBlocks.registerModBlocks();
+        ModItems.registerModItems();
 	}
 }

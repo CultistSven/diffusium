@@ -1,0 +1,22 @@
+{
+  "type" : "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "diffusium:tomato"
+    },
+    {
+      "item": "diffusium:tomato"
+    },
+    {
+      "item": "diffusium:tomato"
+    },
+    {
+      "item": "diffusium:tomato"
+    }
+  ],
+  "result": {
+    "count" : 1,
+    "id": "diffusium:tomato_block"
+  }
+}
