@@ -1,5 +1,6 @@
 {
   "variants": {
-    "": {"model": "diffusium:block/lumintite_crystal"}
+    "light=false": {"model": "diffusium:block/lumintite_crystal"},
+    "light=true": {"model":"diffusium:block/lumintite_crystal_lit"}
   }
 }

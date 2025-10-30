@@ -1,5 +1,6 @@
 package net.cultist.diffusium.block;
 
+import net.cultist.diffusium.block.custom.Lumintite_Crystal;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -17,8 +18,13 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(2f)
                     .sounds(BlockSoundGroup.MUD)));
     public static final Block LUMINTITE_CRYSTAL = registerBlock("lumintite_crystal",
-            new Block(AbstractBlock.Settings.create().strength(4f)
-                    .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new Lumintite_Crystal(AbstractBlock.Settings.create().strength(4f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
+                    .nonOpaque()
+                    .luminance(Lumintite_Crystal::getLuminance)
+            )
+    );
 
 
 

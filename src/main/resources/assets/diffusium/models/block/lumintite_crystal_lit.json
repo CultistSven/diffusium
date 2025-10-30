@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "diffusium:block/lumintite_crystal_lit"
+  }
+}
