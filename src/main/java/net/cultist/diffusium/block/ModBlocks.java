@@ -19,13 +19,9 @@ public class ModBlocks {
                     .sounds(BlockSoundGroup.MUD)));
     public static final Block LUMINTITE_CRYSTAL = registerBlock("lumintite_crystal",
             new Lumintite_Crystal(AbstractBlock.Settings.create().strength(4f)
-                    .requiresTool()
-                    .sounds(BlockSoundGroup.AMETHYST_BLOCK)
-                    .nonOpaque()
-                    .luminance(Lumintite_Crystal::getLuminance)
-            )
-    );
-
+                    .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block BARTITE_CRYSTAL = registerBlock("Bartite Crystal",
+            new Block(AbstractBlock.Settings.create().strength(4f).requiresTool()));
 
 
     private static Block registerBlock(String name, Block block) {
@@ -44,6 +40,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries->{
             entries.add(ModBlocks.TOMATO_BLOCK);
             entries.add(ModBlocks.LUMINTITE_CRYSTAL);
+            entries.add(ModBlocks.BARTITE_CRYSTAL);
         });
     }
 }

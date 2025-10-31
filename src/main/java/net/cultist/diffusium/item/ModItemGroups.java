@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.TOMATO_BLOCK);
                         entries.add(ModItems.LUMINTITE_CRYSTAL_SHARD);
                         entries.add(ModBlocks.LUMINTITE_CRYSTAL);
+                        entries.add(ModBlocks.BARTITE_CRYSTAL);
                     }).build());
 
 
